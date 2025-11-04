@@ -1,0 +1,11 @@
+Cuando se usa herencia para modelar personajes de un videojuego, el diseño puede volverse rápidamente inflexible y
+difícil de mantener. Por ejemplo, se podría empezar con una clase base Character, y luego crear subclases como Warrior
+y Mage. Esto funciona bien al principio, pero cuando surgen nuevas combinaciones de habilidades, el modelo se complica.
+
+Si se necesita un FlyingWarrior, se debe crear una subclase específica. Si más adelante se requiere un Mage
+que también pueda volar, se crea otra subclase. Luego, si aparece un personaje que pueda volar y lanzar hechizos,
+pero también atacar con espada, se debería crear aún otra clase.  Así, cada nueva combinación de habilidades requiere
+una nueva subclase.
+
+Además, hay lenguajes que no permiten herencia múltiple, por lo que no se puede heredar simultáneamente de
+FlyingEntity y Warrior. Esto limita la capacidad de reutilizar comportamientos comunes y obliga a duplicar código.
